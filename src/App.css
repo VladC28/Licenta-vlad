@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face{
+Font-family: DancingScript-Bold;
+src: url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap) format(truetype);
+Font-weight: normal;
+Font-style: normal;
+}
