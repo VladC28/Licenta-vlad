@@ -1,0 +1,14 @@
+.main{
+   position: relative;
+}
+.woman{
+   width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.man{
+   width: 100%;
+   background-color: black;
+  color: white;
+}

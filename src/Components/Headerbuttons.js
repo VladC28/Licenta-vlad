@@ -3,7 +3,7 @@ import React from 'react';
 function Headerbuttons() {
   return (
     <div style ={{textAlign:'right'}}>
-     <button  style = {{
+     <button style = {{
     maraginLeft:'10px',
     marginRight:'10px',
     fontSize: '17px',
