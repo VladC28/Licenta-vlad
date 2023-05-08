@@ -3,11 +3,6 @@ import Logo from '../logo/Logo.jpg'
 import {GiShoppingCart} from 'react-icons/gi'
 import {RiAccountPinCircleLine} from 'react-icons/ri'
 
-
-
-
-
-
 export default function HeaderLogo() {
   return (
     <div style={{display:'flex', alignItem:'center', justifyContent:'baseline'}}>

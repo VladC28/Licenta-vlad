@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Headerbuttons() {
   return (
@@ -15,7 +16,7 @@ function Headerbuttons() {
     borderRadius: '10px'
 
 
- }}>Acasa</button>
+ }}><Link to="/">Home</Link></button>
      <button style ={{
          maraginLeft:'10px',
          marginRight:'10px',
@@ -28,7 +29,7 @@ function Headerbuttons() {
          borderRadius: '10px'
 
 
-     }}>Femei</button>
+     }}><Link to="/woman">Femei</Link></button>
      <button style ={{
          maraginLeft:'10px',
          marginRight:'10px',
@@ -40,7 +41,7 @@ function Headerbuttons() {
          border: '1px',
          borderRadius: '10px'
 
-     }}>Barbati</button>
+     }}><Link to="/man">Barbati</Link></button>
      <button style = {{
          maraginLeft:'10px',
          marginRight:'10px',
@@ -52,7 +53,7 @@ function Headerbuttons() {
          border: '1px',
          borderRadius: '10px'
 
-     }}>Contact</button>
+     }}><Link to="/woman">Contact</Link></button>
     </div>
   )
 }
