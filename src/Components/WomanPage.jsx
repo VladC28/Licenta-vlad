@@ -12,49 +12,49 @@ const data = [{
     "id": 1,
     "name": "Hanorac Dama",
     "description": "Hanorac simplu alb de dama!",
-    "picture": ""
+    "price": "100 lei"
   },
   {
     "id": 2,
-    "name": "Jeans",
+    "name": "Tricou simplu alb - Dama",
     "description": "Classic denim jeans for everyday wear.",
-    "picture": "https://example.com/jeans.jpg"
+    "price": "50 lei"
   },
   {
     "id": 3,
     "name": "Dress",
     "description": "Elegant and stylish dress for special occasions.",
-    "picture": "https://example.com/dress.jpg"
+    "price": "50 lei"
   },
   {
     "id": 4,
-    "name": "Sweater",
+    "name": "Pantaloni culoare rosie - Dama",
     "description": "A cozy and warm sweater for colder days.",
-    "picture": "https://example.com/sweater.jpg"
+    "price": "120 lei"
   },
   {
     "id": 5,
-    "name": "Skirt",
+    "name": "Pantaloni scurti tip blug - Dama",
     "description": "A fashionable and versatile skirt for various occasions.",
-    "picture": "https://example.com/skirt.jpg"
+    "price":"80 lei"
   },
   {
     "id": 6,
-    "name": "Jacket",
+    "name": "Adidasi Nike - Dama",
     "description": "A stylish and lightweight jacket for transitional weather.",
-    "picture": "https://example.com/jacket.jpg"
+    "price": "267 lei"
   },
   {
     "id": 7,
-    "name": "Shorts",
+    "name": "Adidasi Sport - Dama",
     "description": "Comfortable and casual shorts for warm days.",
-    "picture": "https://example.com/shorts.jpg"
+    "price": "200 lei"
   },
   {
     "id": 8,
-    "name": "Blouse",
+    "name": "Adidasi Rosii - Dama",
     "description": "A chic and elegant blouse for formal or semi-formal occasions.",
-    "picture": "https://example.com/blouse.jpg"
+    "price": "150 lei"
   }
 ]
 
