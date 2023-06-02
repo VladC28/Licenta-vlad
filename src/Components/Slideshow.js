@@ -26,7 +26,7 @@ const Slideshow = () => {
       <Fade>
         {fadeImages.map((fadeImage, index) => (
           <div key={index}>
-            <img style={{ width: '100%' }} src={fadeImage.url} alt='images' />
+            <img style={{ width: '90%' }} src={fadeImage.url} alt='images' />
             <h2>{fadeImage.caption}</h2>
           </div>
         ))}
