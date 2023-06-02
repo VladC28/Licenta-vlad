@@ -42,18 +42,7 @@ function Headerbuttons() {
          borderRadius: '10px'
 
      }}><Link to="/man">Barbati</Link></button>
-     <button style = {{
-         maraginLeft:'10px',
-         marginRight:'10px',
-         fontSize: '17px',
-         boxShadow: '0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)',
-         backgroundColor: 'gray',
-         color:'black',
-         cursor:'pointer',
-         border: '1px',
-         borderRadius: '10px'
-
-     }}><Link to="/woman">Contact</Link></button>
+    
     </div>
   )
 }

@@ -1,16 +1,18 @@
 import React from 'react'
-import ComponentRenderCard from './ComponentRenderCard';
 import Footer from './Footer';
 import Headerbuttons from './Headerbuttons';
 import HeaderLogo from './HeaderLogo';
-import Quote from './Quote';
+import QuoteWoman from './QuoteWoman';
+import ComponentRenderCardWoman from './ComponentRenderCardWoman';
+import woman1 from '../ProductsIMG/woman1.jpg'
+
 
 function WomanPage() {
 const data = [{
     "id": 1,
-    "name": "T-Shirt",
-    "description": "A comfortable and casual t-shirt.",
-    "picture": "https://example.com/tshirt.jpg"
+    "name": "Hanorac Dama",
+    "description": "Hanorac simplu alb de dama!",
+    "picture": ""
   },
   {
     "id": 2,
@@ -60,8 +62,8 @@ const data = [{
     <div>
         <Headerbuttons />
         <HeaderLogo />
-            <Quote />
-            <ComponentRenderCard haineFemeie={data} />
+            <ComponentRenderCardWoman haineFemeie={data} />
+            <QuoteWoman />
         <Footer />
     </div>
   )

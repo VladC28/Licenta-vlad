@@ -2,16 +2,19 @@ import React from 'react'
 import Logo from '../logo/Logo.jpg'
 import {GiShoppingCart} from 'react-icons/gi'
 import {RiAccountPinCircleLine} from 'react-icons/ri'
+//import ShoppingCart from './ShoppingCart'
+
+
 
 export default function HeaderLogo() {
   return (
     <div style={{display:'flex', alignItem:'center', justifyContent:'baseline'}}>
+      <a href="">
     <img src= {Logo} alt='logo' style = {{
         width:'100px',
         height: '100px'
-    }}></img>
+    }}></img></a>
       <p style = {{
-       fontFamily:'Dancing Script, cursive',
        marginLeft: '40%',
        fontSize:'25px',
        
@@ -26,7 +29,10 @@ export default function HeaderLogo() {
       justifyContent:'baseline'
 
 
-      }}><GiShoppingCart />Cosul Meu</div>
+      }}><button style={{
+        
+  
+    }} type='button'><GiShoppingCart />Cosul meu</button></div>
 
       <div style = {{
       display:'flex',
@@ -36,7 +42,7 @@ export default function HeaderLogo() {
       justifyContent:'baseline'
 
 
-      }}><RiAccountPinCircleLine />Contul Meu</div>
+      }}><button type='button'><RiAccountPinCircleLine />Contul Meu</button></div>
 
 
     </div>
