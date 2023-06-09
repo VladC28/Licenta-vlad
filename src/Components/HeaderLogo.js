@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState} from 'react'
 import Logo from '../logo/Logo.jpg'
 import {GiShoppingCart} from 'react-icons/gi'
 import {RiAccountPinCircleLine} from 'react-icons/ri'
+import ModalCos from './ModalCos'
 //import ShoppingCart from './ShoppingCart'
 
 
 
-export default function HeaderLogo() {
+export default function HeaderLogo({cosulCumparaturi, deleteProdus}) {
+  const [openModal, setOpenModal] = useState(false);
+  const activateModal = () => {
+    setOpenModal(!openModal)
+  }
   return (
     <div style={{display:'flex', alignItem:'center', justifyContent:'baseline'}}>
       <a href="">
@@ -17,9 +22,6 @@ export default function HeaderLogo() {
       <p style = {{
        marginLeft: '40%',
        fontSize:'25px',
-       
-     
-
       }}>#BeCreative</p>
       <div style = {{
       display: 'flex',
@@ -32,7 +34,7 @@ export default function HeaderLogo() {
       }}><button style={{
         
   
-    }} type='button'><GiShoppingCart />Cosul meu</button></div>
+    }} type='button' onClick={activateModal}><GiShoppingCart />Cosul meu({cosulCumparaturi?.length})</button></div>
 
       <div style = {{
       display:'flex',
@@ -44,7 +46,7 @@ export default function HeaderLogo() {
 
       }}><button type='button'><RiAccountPinCircleLine />Contul Meu</button></div>
 
-
+      {openModal  ? <ModalCos closModal={activateModal} cosulCumparaturi={cosulCumparaturi} deleteProdus={(index) => deleteProdus(index)}/> : null}
     </div>
   )
 }

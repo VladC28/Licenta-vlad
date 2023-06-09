@@ -29,7 +29,7 @@ function Headerbuttons() {
          borderRadius: '10px'
 
 
-     }}><Link to="/woman">Femei</Link></button>
+     }}><Link to="/products">Femei</Link></button>
      <button style ={{
          maraginLeft:'10px',
          marginRight:'10px',
@@ -41,7 +41,7 @@ function Headerbuttons() {
          border: '1px',
          borderRadius: '10px'
 
-     }}><Link to="/man">Barbati</Link></button>
+     }}><Link to="/products">Barbati</Link></button>
     
     </div>
   )

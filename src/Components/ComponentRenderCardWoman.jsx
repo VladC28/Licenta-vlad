@@ -16,7 +16,7 @@ function ComponentRenderCardWoman({haineFemeie}) {
         haineFemeie?.map((unElement, index) => {
             return (
             <div style={{borderRadius: '5px', border: '1px solid' }}key={index}><img style={{width:'350px', height:'200px'}} src={arrayImages[index]} href="" /><div>{unElement?.name}</div><div>{unElement?.description}</div><div>{unElement?.price}</div>
-            <button onClick={() => console.log(index)}>Cumpara</button>
+            <button onClick={() => console.log(index)}>Adauga in Cos</button>
             </div>
             )
         })

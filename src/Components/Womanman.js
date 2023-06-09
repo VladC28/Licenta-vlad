@@ -9,11 +9,11 @@ function Womanman() {
     <div className="main" style ={{width: '100%', textAlign: 'center'}}>
       <img style={{}} src={image4} alt='woman'></img>
       <div style={{width:'100%', height:'25px', textAlign:'center', backgroundColor:'black'}}>
-      <button style={{}}><Link to="/woman">Femei</Link></button>
+      <button style={{}}><Link to="/products">Femei</Link></button>
       </div>
       <img style={{}} src={image5} alt='man'></img>
       <div style={{width:'100%', height:'25px', textAlign:'center', backgroundColor:'black'}}>
-      <button style={{}}><Link to="/man">Barbati</Link></button>
+      <button style={{}}><Link to="/products">Barbati</Link></button>
       </div>
     </div>
   )

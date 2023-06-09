@@ -7,7 +7,6 @@ function Bodyimage() {
     <div style={{width: "100%", display:"flex"}} className='Container'>
       <img style={{width:"50%"}} src={woman} alt="woman"></img>
       <img style={{width:"50%"}} src={men} alt="men"></img>
-   
     </div>
   )
 }
