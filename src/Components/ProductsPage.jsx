@@ -9,14 +9,14 @@ function ProductsPage() {
         {    "id": 1,
     "name": "Tricou negru - Barbati",
     "description": "Tricou cu scris ",
-    "picture": "../../public/images/image1.jpeg",
+    "picture": "../../assets/image1.jpeg",
     "gender": "barbati"
   },
   {
     "id": 2,
     "name": "Tricou alb - Barbati",
     "description": "Classic denim jeans for everyday wear.",
-    "picture": "https://example.com/jeans.jpg",
+    "picture": "../../assets/image1.jpeg",
     "gender": "barbati"
 
   },
@@ -24,7 +24,7 @@ function ProductsPage() {
     "id": 3,
     "name": "Tricou negru - Barbati",
     "description": "Elegant and stylish dress for special occasions.",
-    "picture": "https://example.com/dress.jpg",
+    "picture": "../../assets/image1.jpeg",
     "gender": "barbati"
 
   },
@@ -32,7 +32,7 @@ function ProductsPage() {
     "id": 4,
     "name": "Tricou alb - Barbati",
     "description": "A cozy and warm sweater for colder days.",
-    "picture": "https://example.com/sweater.jpg",
+    "picture": "../../assets/image1.jpeg",
     "gender": "barbati"
 
   },
@@ -40,7 +40,7 @@ function ProductsPage() {
     "id": 5,
     "name": "Blugi bleumaren - Barbati",
     "description": "A fashionable and versatile skirt for various occasions.",
-    "picture": "https://example.com/skirt.jpg",
+    "picture": "../../assets/image1.jpeg",
     "gender": "barbati"
 
   },
@@ -48,7 +48,7 @@ function ProductsPage() {
     "id": 6,
     "name": "Adidasi tip sport - Barbati",
     "description": "A stylish and lightweight jacket for transitional weather.",
-    "picture": "https://example.com/jacket.jpg",
+    "picture": "../../assets/image1.jpeg",
     "gender": "barbati"
 
   },
@@ -56,7 +56,7 @@ function ProductsPage() {
     "id": 7,
     "name": "Adidasi nike - Barbati",
     "description": "Comfortable and casual shorts for warm days.",
-    "picture": "https://example.com/shorts.jpg",
+    "picture": "../../assets/image1.jpeg",
     "gender": "barbati"
 
   },
@@ -64,7 +64,7 @@ function ProductsPage() {
     "id": 8,
     "name": "Adidasi negrii Nike - Barbati",
     "description": "A chic and elegant blouse for formal or semi-formal occasions.",
-    "picture": "https://example.com/blouse.jpg",
+    "picture": "../../assets/image1.jpeg",
     "gender": "barbati"
   },
   {
@@ -72,6 +72,7 @@ function ProductsPage() {
     "name": "Hanorac Dama",
     "description": "Hanorac simplu alb de dama!",
     "price": "100 lei",
+    "picture": "../../assets/image1.jpeg",
     "gender": "femei"
   },
   {
@@ -79,13 +80,15 @@ function ProductsPage() {
     "name": "Tricou simplu alb - Dama",
     "description": "Classic denim jeans for everyday wear.",
     "price": "50 lei",
-    "gender": "femei"
+    "gender": "femei",
+    "picture": "../../assets/image1.jpeg"
   },
   {
     "id": 11,
     "name": "Dress",
     "description": "Elegant and stylish dress for special occasions.",
     "price": "50 lei",
+    "picture": "../../assets/image1.jpeg",
     "gender": "femei"
   },
   {
@@ -93,6 +96,7 @@ function ProductsPage() {
     "name": "Pantaloni culoare rosie - Dama",
     "description": "A cozy and warm sweater for colder days.",
     "price": "120 lei",
+    "picture": "../../assets/image1.jpeg",
     "gender": "femei"
   },
   {
@@ -100,6 +104,7 @@ function ProductsPage() {
     "name": "Pantaloni scurti tip blug - Dama",
     "description": "A fashionable and versatile skirt for various occasions.",
     "price":"80 lei",
+    "picture": "../../assets/image1.jpeg",
     "gender": "femei"
   },
   {
@@ -107,6 +112,7 @@ function ProductsPage() {
     "name": "Adidasi Nike - Dama",
     "description": "A stylish and lightweight jacket for transitional weather.",
     "price": "267 lei",
+    "picture": "../../assets/image1.jpeg",
     "gender": "femei"
   },
   {
@@ -114,6 +120,7 @@ function ProductsPage() {
     "name": "Adidasi Sport - Dama",
     "description": "Comfortable and casual shorts for warm days.",
     "price": "200 lei",
+    "picture": "../../assets/image1.jpeg",
     "gender": "femei"
   },
   {
@@ -121,6 +128,7 @@ function ProductsPage() {
     "name": "Adidasi Rosii - Dama",
     "description": "A chic and elegant blouse for formal or semi-formal occasions.",
     "price": "150 lei",
+    "picture": "../../assets/image1.jpeg",
     "gender": "femei"
   }
     ]

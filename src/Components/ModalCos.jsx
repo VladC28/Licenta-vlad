@@ -28,7 +28,7 @@ function ModalCos({closModal, cosulCumparaturi, deleteProdus}) {
 {
         cosulCumparaturi?.map((unElement, index) => {
             return (
-            <div style={{ borderRadius: '5px', border: '1px solid', background: '#c4c4c4' }}key={index}><div>{unElement?.name}</div><div>{unElement?.descriere}</div>
+            <div style={{ borderRadius: '5px', border: '1px solid', background: '#c4c4c4' }}key={index}><div><img style={{width:'350px', height:'200px'}} src={`${unElement?.picture}`}  alt={unElement?.picture}  />{unElement?.name}</div><div>{unElement?.descriere}</div>
             <button onClick={(e) => deleteProdus(unElement?.id)}>remove this</button>
             </div>
             )
