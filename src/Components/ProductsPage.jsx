@@ -9,7 +9,7 @@ function ProductsPage() {
         {    "id": 1,
     "name": "Tricou negru - Barbati",
     "description": "Tricou cu scris ",
-    "picture": "../ProductsIMG/manshirt1.jpg",
+    "picture": "../../public/images/image1.jpeg",
     "gender": "barbati"
   },
   {

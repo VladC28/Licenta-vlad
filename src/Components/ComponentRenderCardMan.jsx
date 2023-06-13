@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import manshirt1 from '../ProductsIMG/manshirt1.jpg'
 import manshirt2 from '../ProductsIMG/manshirt2.jpg'
 import manshirt3 from '../ProductsIMG/manshirt3.jpg'
