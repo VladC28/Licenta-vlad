@@ -3,6 +3,7 @@ import Logo from '../logo/Logo.jpg'
 import {GiShoppingCart} from 'react-icons/gi'
 import {RiAccountPinCircleLine} from 'react-icons/ri'
 import ModalCos from './ModalCos'
+import { Link } from 'react-router-dom'
 //import ShoppingCart from './ShoppingCart'
 
 
@@ -26,25 +27,18 @@ export default function HeaderLogo({cosulCumparaturi, deleteProdus}) {
       <div style = {{
       display: 'flex',
       fontSize:'20px',
-      marginLeft:'20%',
+      marginLeft:'38%',
       marginTop: '30px',
       justifyContent:'baseline'
-
-
-      }}><button style={{
-        
-  
-    }} type='button' onClick={activateModal}><GiShoppingCart />Cosul meu({cosulCumparaturi?.length})</button></div>
+      }}><button style={{ fontSize: '40px', width: 'fit-content', height: 'fit-content', border: 'none', background: 'none'
+    }} type='button' onClick={activateModal}><GiShoppingCart />{cosulCumparaturi?.length}</button></div>
 
       <div style = {{
       display:'flex',
       fontSize: '20px',
-      marginLeft: '5%',
       marginTop: '30px',
       justifyContent:'baseline'
-
-
-      }}><button type='button'><RiAccountPinCircleLine />Contul Meu</button></div>
+      }}><button  style={{fontSize: '40px', width: 'fit-content', height: 'fit-content', border: 'none', background: 'none'}}type='button'><Link to='/login'><RiAccountPinCircleLine /></Link></button></div>
 
       {openModal  ? <ModalCos closModal={activateModal} cosulCumparaturi={cosulCumparaturi} deleteProdus={(index) => deleteProdus(index)}/> : null}
     </div>

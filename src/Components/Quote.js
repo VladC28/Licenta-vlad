@@ -7,7 +7,8 @@ function Quote() {
         paddingLeft:'10%',
         textAlign: 'center',
         borderStyle: 'double',
-        width:'80%',
+        width:'70%',
+        margin: ' 10px auto',
         height: '400px',
         fontFamily:'Light'}}>
         <h6 style={{fontSize:'50px'}}>"Elegance is when the inside is as beautiful as the outside!"</h6>

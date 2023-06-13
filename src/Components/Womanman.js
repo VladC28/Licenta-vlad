@@ -6,16 +6,21 @@ import {Link} from 'react-router-dom'
 
 function Womanman() {
   return (
-    <div className="main" style ={{width: '100%', textAlign: 'center'}}>
-      <img style={{}} src={image4} alt='woman'></img>
-      <div style={{width:'100%', height:'25px', textAlign:'center', backgroundColor:'black'}}>
-      <button style={{}}><Link to="/products">Femei</Link></button>
+    <div className="main" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', width: '100%', textAlign: 'center' }}>
+      <div>
+      <img style={{}} src={image4} alt="woman" />
+      <div style={{ width: '100%', height: '25px', textAlign: 'center', backgroundColor: 'black' }}>
+        <button style={{}}><Link to="/products">Femei</Link></button>
       </div>
-      <img style={{}} src={image5} alt='man'></img>
-      <div style={{width:'100%', height:'25px', textAlign:'center', backgroundColor:'black'}}>
-      <button style={{}}><Link to="/products">Barbati</Link></button>
+        </div>
+      <div>
+      <img style={{}} src={image5} alt="man" />
+      <div style={{ width: '100%', height: '25px', textAlign: 'center', backgroundColor: 'black' }}>
+        <button style={{}}><Link to="/products">Barbati</Link></button>
       </div>
-    </div>
+        </div>
+   </div>
+
   )
 }
 
