@@ -2,7 +2,7 @@ import React from 'react';
 
 function ModalCos({ closeModal, cosulCumparaturi, deleteProdus }) {
   // Extract the prices from the objects in cosulCumparaturi
-   const total = cosulCumparaturi.reduce((acc, unElement) => {
+   const total = cosulCumparaturi?.reduce((acc, unElement) => {
     const price = parseInt(unElement.price.replace(/\D/g, ''));
     return acc + price;
   }, 0);
