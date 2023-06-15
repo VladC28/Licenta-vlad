@@ -8,10 +8,10 @@ const UserDetails = () => {
         <VscAccount className="user-details-icon" />
       </div>
       <div className="user-details-content">
-        <p><strong>Name:</strong>John Doe</p>
-        <p><strong>Email:</strong>johndoe@example.com</p>
-        <p><strong>Phone Number:</strong>123-456-7890</p>
-        <p><strong>Address:</strong>123 Street, City, Country</p>
+        <p><strong>Name:</strong>Badea Vlad Cristian</p>
+        <p><strong>Email:</strong>badea.vlad13@gmail.com</p>
+        <p><strong>Phone Number:</strong>0784914144</p>
+        <p><strong>Address:</strong>Pitesti</p>
       </div>
     </div>
   );

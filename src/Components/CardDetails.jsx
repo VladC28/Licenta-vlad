@@ -16,11 +16,11 @@ const CardDetails = () => {
       }}
     >
       <div>
-        <p>Bank Name: XYZ Bank</p>
+        <p>Bank Name: Banca Romaniei</p>
         <p>Sort Code: 12-34-56</p>
         <p>Account Number: 12345678</p>
-        <p>IBAN: GB12 ABCD 3456 7890 1234 56</p>
-        <p>Name: John Doe</p>
+        <p>IBAN: RO12 ABCD 3456 7890 1234 56</p>
+        <p>Name: Badea Vlad Cristian</p>
       </div>
     </div>
     </div>

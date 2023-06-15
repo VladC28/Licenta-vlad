@@ -18,15 +18,14 @@ const LoginPage = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Check if email and password match the predefined values
-    if (email === 'vald@vlad.com' && password === 'HaiAcum') {
-      // Successful login
+   
+    if (email === 'badea.vlad13@gmail.com' && password === '1234') {
       setErrorMessage('');
       navigateTo('/myAccount')
 
-      // Perform any necessary actions, such as redirecting to a dashboard
+      
     } else {
-      // Invalid credentials
+   
       setErrorMessage('Invalid email or password');
     }
   };

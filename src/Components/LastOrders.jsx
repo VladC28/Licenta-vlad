@@ -3,11 +3,11 @@ import { FaCheck } from 'react-icons/fa';
 
 const LastOrders = () => {
   const orders = [
-    { date: '2023-06-01', delivered: true, price: 50.99 },
+    { date: '2023-06-01', delivered: true, price: 50 },
     { date: '2023-05-25', delivered: false, price: 35.99 },
-    { date: '2023-05-19', delivered: true, price: 45.99 },
-    { date: '2023-05-12', delivered: true, price: 62.99 },
-    { date: '2023-05-05', delivered: true, price: 28.99 },
+    { date: '2023-05-19', delivered: true, price: 45.55 },
+    { date: '2023-05-12', delivered: true, price: 62.26 },
+    { date: '2023-05-05', delivered: true, price: 28 },
   ];
 
   return (
@@ -21,7 +21,7 @@ const LastOrders = () => {
               <p>Delivered: {order.delivered ? 'Yes' : 'No'}</p>
             </div>
             <div className="order-price">
-              <p>Price: ${order.price}</p>
+              <p>Price: {order.price} lei</p>
               {order.delivered && (
                 <div className="tick-icon">
                   <FaCheck />

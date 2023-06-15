@@ -4,7 +4,7 @@ import {GiShoppingCart} from 'react-icons/gi'
 import {RiAccountPinCircleLine} from 'react-icons/ri'
 import ModalCos from './ModalCos'
 import { Link } from 'react-router-dom'
-//import ShoppingCart from './ShoppingCart'
+
 
 
 
@@ -27,7 +27,7 @@ export default function HeaderLogo({cosulCumparaturi, deleteProdus}) {
       <div style = {{
       display: 'flex',
       fontSize:'20px',
-      marginLeft:'38%',
+      marginLeft:'30%',
       marginTop: '30px',
       justifyContent:'baseline'
       }}><button style={{ fontSize: '40px', width: 'fit-content', height: 'fit-content', border: 'none', background: 'none'
@@ -37,8 +37,9 @@ export default function HeaderLogo({cosulCumparaturi, deleteProdus}) {
       display:'flex',
       fontSize: '20px',
       marginTop: '30px',
-      justifyContent:'baseline'
-      }}><button  style={{fontSize: '40px', width: 'fit-content', height: 'fit-content', border: 'none', background: 'none'}}type='button'><Link to='/login'><RiAccountPinCircleLine /></Link></button></div>
+     justifyContent:'baseline'
+      }}><button  style={{fontSize: '40px', width: 'fit-content', height: 'fit-content', border: 'none', background: 'none'}}type='button'><Link to='/login'><RiAccountPinCircleLine /></Link></button>
+      </div>
 
       {openModal  ? <ModalCos closeModal={() => setOpenModal(!openModal)} cosulCumparaturi={cosulCumparaturi} deleteProdus={(index) => deleteProdus(index)}/> : null}
     </div>

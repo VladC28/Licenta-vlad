@@ -148,7 +148,7 @@ setDataSelected(filteredPeople);
     const callBackAddCos = (index) => {
           const objectToAdd = dataSelected[index]; 
 
-    // Update the state by adding the object to the existing state
+    
     setCosulCumparaturi(prevState => [...prevState, objectToAdd]);
     }
     useEffect(() => {
