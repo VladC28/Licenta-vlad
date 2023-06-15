@@ -80,7 +80,7 @@ function ModalCos({ closeModal, cosulCumparaturi, deleteProdus }) {
               top: '5px',
               right: '5px',
             }}
-            onClick={closeModal}
+            onClick={() => closeModal()}
           >
             x
           </button>

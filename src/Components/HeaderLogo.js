@@ -40,7 +40,7 @@ export default function HeaderLogo({cosulCumparaturi, deleteProdus}) {
       justifyContent:'baseline'
       }}><button  style={{fontSize: '40px', width: 'fit-content', height: 'fit-content', border: 'none', background: 'none'}}type='button'><Link to='/login'><RiAccountPinCircleLine /></Link></button></div>
 
-      {openModal  ? <ModalCos closModal={activateModal} cosulCumparaturi={cosulCumparaturi} deleteProdus={(index) => deleteProdus(index)}/> : null}
+      {openModal  ? <ModalCos closeModal={() => setOpenModal(!openModal)} cosulCumparaturi={cosulCumparaturi} deleteProdus={(index) => deleteProdus(index)}/> : null}
     </div>
   )
 }
