@@ -12,14 +12,14 @@ function ProductsPage() {
         {    "id": 1,
     "name": "Tricou negru - Barbati",
     "description": "Tricou cu scris ",
-    "picture": "../../assets/manshirt1.jpg",
+    "picture": "../../assets/image1.jpeg",
     "gender": "barbati"
   },
   {
     "id": 2,
     "name": "Tricou alb - Barbati",
     "description": "Classic denim jeans for everyday wear.",
-    "picture": "../../assets/image1.jpeg",
+    "picture": "../../assets/image2.jpeg",
     "gender": "barbati"
 
   },
@@ -27,7 +27,7 @@ function ProductsPage() {
     "id": 3,
     "name": "Tricou negru - Barbati",
     "description": "Elegant and stylish dress for special occasions.",
-    "picture": "../../assets/image1.jpeg",
+    "picture": "../../assets/image3.jpeg",
     "gender": "barbati"
 
   },
@@ -35,7 +35,7 @@ function ProductsPage() {
     "id": 4,
     "name": "Tricou alb - Barbati",
     "description": "A cozy and warm sweater for colder days.",
-    "picture": "../../assets/image1.jpeg",
+    "picture": "../../assets/men.jpeg",
     "gender": "barbati"
 
   },
