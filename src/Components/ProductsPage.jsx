@@ -3,13 +3,16 @@ import ComponentRenderCardMan from './ComponentRenderCardMan'
 import Footer from './Footer'
 import Headerbuttons from './Headerbuttons'
 import HeaderLogo from './HeaderLogo'
+import {ImWoman} from 'react-icons/im'
+import {ImMan} from 'react-icons/im'
+
 
 function ProductsPage() {
     const data = [
         {    "id": 1,
     "name": "Tricou negru - Barbati",
     "description": "Tricou cu scris ",
-    "picture": "../../assets/image1.jpeg",
+    "picture": "../../assets/manshirt1.jpg",
     "gender": "barbati"
   },
   {
@@ -159,11 +162,11 @@ setDataSelected(filteredPeople);
       setCosulCumparaturi(updatedArray);
     }
   return (
-        <div>
+        <div style={{textAlign:'center'}}>
         <Headerbuttons />
         <HeaderLogo cosulCumparaturi={cosulCumparaturi} deleteProdus={(index) => deleteProdus(index)}/>
-        <button onClick={() => selectionFilters('femei')}>Femei</button>
-        <button onClick={() => selectionFilters('barbati')} >Barbati</button>
+        <button style={{ fontSize: '60px', width: 'fit-content', height: 'fit-content', border: 'none', background: 'none', cursor:'pointer'}} onClick={() => selectionFilters('femei')}><ImWoman /></button>
+        <button style={{ fontSize: '60px', width: 'fit-content', height: 'fit-content', border: 'none', background: 'none', cursor:'pointer'}} onClick={() => selectionFilters('barbati')} ><ImMan /></button>
         <ComponentRenderCardMan haineBarbat={dataSelected} callBackAddCos={(index) => callBackAddCos(index)}/>
         <Footer />
     </div>
