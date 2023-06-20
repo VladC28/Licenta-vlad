@@ -12,62 +12,62 @@ function ProductsPage() {
         {    "id": 1,
     "name": "Tricou negru - Barbati",
     "description": "Tricou cu scris ",
-    "picture": "../../assets/manshirt1.jpg",
+    "picture": "../../assets/manshirt1.jpeg",
     "gender": "barbati"
   },
   {
     "id": 2,
     "name": "Tricou alb - Barbati",
-    "description": "Classic denim jeans for everyday wear.",
-    "picture": "../../assets/manshirt2.jpg",
+    "description": "Tricou clasic alb",
+    "picture": "../../assets/manshirt2.jpeg",
     "gender": "barbati"
 
   },
   {
     "id": 3,
     "name": "Tricou negru - Barbati",
-    "description": "Elegant and stylish dress for special occasions.",
-    "picture": "../../assets/manshirt3.jpg",
+    "description": "Tricou clasic negru.",
+    "picture": "../../assets/manshirt3.jpeg",
     "gender": "barbati"
 
   },
   {
     "id": 4,
-    "name": "Tricou alb - Barbati",
-    "description": "A cozy and warm sweater for colder days.",
-    "picture": "../../assets/men.jpeg",
+    "name": "Tricou negru - Barbati",
+    "description": "Tricou clasic negru.",
+    "picture": "../../assets/manshirt4.jpeg",
     "gender": "barbati"
 
   },
   {
     "id": 5,
     "name": "Blugi bleumaren - Barbati",
-    "description": "A fashionable and versatile skirt for various occasions.",
-    "picture": "../../assets/image1.jpeg",
+    "description": "Pantaloni de blug albastrii",
+    "picture": "../../assets/pantsman1.jpeg",
     "gender": "barbati"
 
   },
   {
     "id": 6,
     "name": "Adidasi tip sport - Barbati",
-    "description": "A stylish and lightweight jacket for transitional weather.",
-    "picture": "../../assets/image1.jpeg",
+    "description": "Adidasi sport pentru barbati",
+    "picture": "../../assets/manshoe2.jpeg",
     "gender": "barbati"
 
   },
   {
     "id": 7,
     "name": "Adidasi nike - Barbati",
-    "description": "Comfortable and casual shorts for warm days.",
-    "picture": "../../assets/image1.jpeg",
+    "description": "Nike",
+    "picture": "../../assets/manshoe1.jpeg",
     "gender": "barbati"
 
   },
   {
     "id": 8,
     "name": "Adidasi negrii Nike - Barbati",
-    "description": "A chic and elegant blouse for formal or semi-formal occasions.",
-    "picture": "../../assets/image1.jpeg",
+    "description": "Adidasi barbati negrii",
+    "picture": "../../assets/manshoe3.jpeg",
     "gender": "barbati"
   },
   {
@@ -75,63 +75,63 @@ function ProductsPage() {
     "name": "Hanorac Dama",
     "description": "Hanorac simplu alb de dama!",
     "price": "100 lei",
-    "picture": "../../assets/image1.jpeg",
+    "picture": "../../assets/woman1.jpeg",
     "gender": "femei"
   },
   {
     "id": 10,
     "name": "Tricou simplu alb - Dama",
-    "description": "Classic denim jeans for everyday wear.",
+    "description": "Tricou simplu alb de dama",
     "price": "50 lei",
     "gender": "femei",
-    "picture": "../../assets/image1.jpeg"
+    "picture": "../../assets/woman2.jpeg"
   },
   {
     "id": 11,
     "name": "Dress",
     "description": "Elegant and stylish dress for special occasions.",
     "price": "50 lei",
-    "picture": "../../assets/image1.jpeg",
+    "picture": "../../assets/.jpeg",
     "gender": "femei"
   },
   {
     "id": 12,
     "name": "Pantaloni culoare rosie - Dama",
-    "description": "A cozy and warm sweater for colder days.",
+    "description": "Pantaloni eleganti de dama",
     "price": "120 lei",
-    "picture": "../../assets/image1.jpeg",
+    "picture": "../../assets/pantswoman1.jpeg",
     "gender": "femei"
   },
   {
     "id": 13,
     "name": "Pantaloni scurti tip blug - Dama",
-    "description": "A fashionable and versatile skirt for various occasions.",
+    "description": "Pantaloni scurti din blug.",
     "price":"80 lei",
-    "picture": "../../assets/image1.jpeg",
+    "picture": "../../assets/pantswoman2.jpeg",
     "gender": "femei"
   },
   {
     "id": 14,
     "name": "Adidasi Nike - Dama",
-    "description": "A stylish and lightweight jacket for transitional weather.",
+    "description": "Adidasi Nike dama sport",
     "price": "267 lei",
-    "picture": "../../assets/image1.jpeg",
+    "picture": "../../assets/womanshoe1.jpeg",
     "gender": "femei"
   },
   {
     "id": 15,
     "name": "Adidasi Sport - Dama",
-    "description": "Comfortable and casual shorts for warm days.",
+    "description": "Adidasi confortabili pentru femei.",
     "price": "200 lei",
-    "picture": "../../assets/image1.jpeg",
+    "picture": "../../assets/womanshoe2.jpeg",
     "gender": "femei"
   },
   {
     "id": 16,
     "name": "Adidasi Rosii - Dama",
-    "description": "A chic and elegant blouse for formal or semi-formal occasions.",
+    "description": "Adidasi sportivi de dama, culoare rosie.",
     "price": "150 lei",
-    "picture": "../../assets/image1.jpeg",
+    "picture": "../../assets/womanshoe3.jpeg",
     "gender": "femei"
   }
     ]
