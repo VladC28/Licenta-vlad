@@ -61,7 +61,7 @@ function ModalCos({ closeModal, cosulCumparaturi, deleteProdus }) {
                     <div>{unElement?.descriere}</div>
                   </div>
                   <button onClick={(e) => deleteProdus(unElement?.id)}>
-                    remove this
+                    elimina
                   </button>
                 </div>
               ))}
@@ -71,7 +71,7 @@ function ModalCos({ closeModal, cosulCumparaturi, deleteProdus }) {
           )}
           {cosulCumparaturi?.length ? (
             <div style={{ marginTop: '10px' }}>
-              Prices: {total} {}
+              Pret: {total} {}
             </div>
           ) : null}
           <button
