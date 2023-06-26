@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function ModalCos({ closeModal, cosulCumparaturi, deleteProdus }) {
+  const [totalPrice, setTotalPrice] = useState('0')
   
-   const total = cosulCumparaturi?.reduce((acc, unElement) => {
-    const price = parseInt(unElement.price.replace(/\D/g, ''));
+  const calculateTotal = (cosulCumparaturi) => {
+  const total = cosulCumparaturi?.reduce((acc, unElement) => {
+    const price = parseInt(unElement?.price?.replace(/\D/g, ''));
     return acc + price;
   }, 0);
 
+  return total;
+};
+  useEffect(() => {
+    setTotalPrice(calculateTotal(cosulCumparaturi))
+  }, [cosulCumparaturi])
   return (
     <div>
       <div
@@ -71,7 +78,7 @@ function ModalCos({ closeModal, cosulCumparaturi, deleteProdus }) {
           )}
           {cosulCumparaturi?.length ? (
             <div style={{ marginTop: '10px' }}>
-              Prices: {total} {}
+              Prices: {totalPrice} lei
             </div>
           ) : null}
           <button

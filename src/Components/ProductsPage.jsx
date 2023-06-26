@@ -13,13 +13,16 @@ function ProductsPage() {
     "name": "Tricou negru - Barbati",
     "description": "Tricou cu scris ",
     "picture": "../../assets/image1.jpeg",
+    "price": "50 lei",
     "gender": "barbati"
+    
   },
   {
     "id": 2,
     "name": "Tricou alb - Barbati",
     "description": "Classic denim jeans for everyday wear.",
     "picture": "../../assets/image2.jpeg",
+    "price": "50 lei",
     "gender": "barbati"
 
   },
@@ -28,6 +31,7 @@ function ProductsPage() {
     "name": "Tricou negru - Barbati",
     "description": "Elegant and stylish dress for special occasions.",
     "picture": "../../assets/image3.jpeg",
+    "price": "50 lei",
     "gender": "barbati"
 
   },
@@ -36,6 +40,7 @@ function ProductsPage() {
     "name": "Tricou alb - Barbati",
     "description": "A cozy and warm sweater for colder days.",
     "picture": "../../assets/men.jpeg",
+    "price": "50 lei",
     "gender": "barbati"
 
   },
@@ -44,6 +49,7 @@ function ProductsPage() {
     "name": "Blugi bleumaren - Barbati",
     "description": "A fashionable and versatile skirt for various occasions.",
     "picture": "../../assets/image1.jpeg",
+    "price": "50 lei",
     "gender": "barbati"
 
   },
@@ -52,6 +58,7 @@ function ProductsPage() {
     "name": "Adidasi tip sport - Barbati",
     "description": "A stylish and lightweight jacket for transitional weather.",
     "picture": "../../assets/image1.jpeg",
+    "price": "50 lei",
     "gender": "barbati"
 
   },
@@ -60,6 +67,7 @@ function ProductsPage() {
     "name": "Adidasi nike - Barbati",
     "description": "Comfortable and casual shorts for warm days.",
     "picture": "../../assets/image1.jpeg",
+    "price": "50 lei",
     "gender": "barbati"
 
   },
@@ -68,6 +76,7 @@ function ProductsPage() {
     "name": "Adidasi negrii Nike - Barbati",
     "description": "A chic and elegant blouse for formal or semi-formal occasions.",
     "picture": "../../assets/image1.jpeg",
+    "price": "50 lei",
     "gender": "barbati"
   },
   {
