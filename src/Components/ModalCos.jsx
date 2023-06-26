@@ -68,7 +68,7 @@ function ModalCos({ closeModal, cosulCumparaturi, deleteProdus }) {
                     <div>{unElement?.descriere}</div>
                   </div>
                   <button onClick={(e) => deleteProdus(unElement?.id)}>
-                    remove this
+                    elimina
                   </button>
                 </div>
               ))}
