@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import ComponentRenderCardMan from './ComponentRenderCardMan'
-import Footer from './Footer'
-import Headerbuttons from './Headerbuttons'
-import HeaderLogo from './HeaderLogo'
-
-
+import React, { useState, useEffect } from 'react';
+import ComponentRenderCardMan from './ComponentRenderCardMan';
+import Footer from './Footer';
+import Headerbuttons from './Headerbuttons';
+import HeaderLogo from './HeaderLogo';
 
 function ProductsPage() {
-    const data = [
+   const data = [
         {   
     "id": 1,
     "name": "Tricou negru - Barbati",
@@ -145,42 +143,88 @@ function ProductsPage() {
     "gender": "femei"
   }
     ]
-    const [dataSelected, setDataSelected] = useState();
-    const [cosulCumparaturi, setCosulCumparaturi] = useState([]);
-    const selectionFilters = async (genderSelection) => {
-      if(genderSelection === 'femei') {
-const filteredPeople = data.filter(person => person.gender === 'femei');
-setDataSelected(filteredPeople);
-      } else if (genderSelection === 'barbati') {
-const filteredPeople = data.filter(person => person.gender === 'barbati');
-setDataSelected(filteredPeople);
-      }
-       else return setDataSelected(data);
-    }
+  const [dataSelected, setDataSelected] = useState([]);
+  const [cosulCumparaturi, setCosulCumparaturi] = useState([]);
+  const [activeFilter, setActiveFilter] = useState('femei');
 
-    const callBackAddCos = (index) => {
-          const objectToAdd = dataSelected[index]; 
+  const selectionFilters = (genderSelection) => {
+    if (genderSelection === 'femei') {
+      const filteredData = data.filter((item) => item.gender === 'femei');
+      setDataSelected(filteredData);
+    } else if (genderSelection === 'barbati') {
+      const filteredData = data.filter((item) => item.gender === 'barbati');
+      setDataSelected(filteredData);
+    } else {
+      setDataSelected(data);
+    }
+    setActiveFilter(genderSelection);
+  };
 
-    
-    setCosulCumparaturi(prevState => [...prevState, objectToAdd]);
-    }
-    useEffect(() => {
-      selectionFilters('femei');
-    }, [1])
-    const deleteProdus = (index) => {
-      const updatedArray = cosulCumparaturi.filter((obj) => obj.id !== index);
-      setCosulCumparaturi(updatedArray);
-    }
+  const callBackAddCos = (index) => {
+    const objectToAdd = dataSelected[index];
+    setCosulCumparaturi((prevCos) => [...prevCos, objectToAdd]);
+  };
+
+  useEffect(() => {
+    selectionFilters('femei');
+  }, []);
+
+  const deleteProdus = (index) => {
+    const updatedArray = cosulCumparaturi.filter((obj) => obj.id !== index);
+    setCosulCumparaturi(updatedArray);
+  };
+
   return (
-        <div style={{}}>
-        <Headerbuttons />
-        <HeaderLogo cosulCumparaturi={cosulCumparaturi} deleteProdus={(index) => deleteProdus(index)}/>
-        <button style={{display:'inline-block', outline:'none', cursor:'pointer', fontSize:'16px', lineHeight:'20px', fontWeight:'600', borderRadius:'8px', padding:'14px 24px', border:'none', background:'linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%)', color:'#fff'}} onClick={() => selectionFilters('femei')}>Femei</button>
-        <button style={{ display:'inline-block', outline:'none', cursor:'pointer', fontSize:'16px', lineHeight:'20px', fontWeight:'600', borderRadius:'8px', padding:'14px 24px', border:'none', backgroundColor:'#00D8FF', color:'#fff'}} onClick={() => selectionFilters('barbati')} >Barbati</button>
-        <ComponentRenderCardMan haineBarbat={dataSelected} callBackAddCos={(index) => callBackAddCos(index)}/>
-        <Footer />
+    <div style={{}}>
+      <Headerbuttons />
+      <HeaderLogo cosulCumparaturi={cosulCumparaturi} deleteProdus={deleteProdus} />
+      <div style={filterContainerStyle}>
+        <button
+          style={{
+            ...filterButtonStyle,
+            backgroundColor: activeFilter === 'femei' ? '#00D8FF' : 'transparent',
+            color: activeFilter === 'femei' ? '#fff' : '#000',
+          }}
+          onClick={() => selectionFilters('femei')}
+        >
+          Femei
+        </button>
+        <button
+          style={{
+            ...filterButtonStyle,
+            backgroundColor: activeFilter === 'barbati' ? '#00D8FF' : 'transparent',
+            color: activeFilter === 'barbati' ? '#fff' : '#000',
+          }}
+          onClick={() => selectionFilters('barbati')}
+        >
+          Barbati
+        </button>
+      </div>
+      <ComponentRenderCardMan haineBarbat={dataSelected} callBackAddCos={callBackAddCos} />
+      <Footer />
     </div>
-  )
+  );
 }
+
+const filterContainerStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  marginBottom: '20px',
+};
+
+const filterButtonStyle = {
+  display: 'inline-block',
+  outline: 'none',
+  cursor: 'pointer',
+  fontSize: '16px',
+  lineHeight: '20px',
+  fontWeight: '600',
+  borderRadius: '8px',
+  padding: '14px 24px',
+  border: 'none',
+  color: '#000',
+  marginRight: '10px',
+  transition: 'background-color 0.3s',
+};
 
 export default ProductsPage;

@@ -1,20 +1,27 @@
-import React from 'react'
-import "../fonts/CaveatBold.ttf"
+import React from 'react';
+import '../fonts/CaveatBold.ttf';
 
 function Quote() {
   return (
-    <div style={{
-        paddingLeft:'10%',
+    <div
+      style={{
+        paddingLeft: '5%',
+        paddingRight: '5%',
         textAlign: 'center',
         borderStyle: 'double',
-        width:'70%',
-        margin: ' 10px auto',
-        height: '400px',
-        fontFamily:'Light'}}>
-        <h6 style={{fontSize:'50px'}}>"Elegance is when the inside is as beautiful as the outside!"</h6>
-        <p style={{fontSize:'30px'}}>~Coco Chanel~</p>
+        width: '80%',
+        maxWidth: '700px',
+        margin: '10px auto',
+        height: 'auto',
+        fontFamily: 'Light',
+      }}
+    >
+      <h6 style={{ fontSize: '18px', margin: '20px 0' }}>
+        "Elegance is when the inside is as beautiful as the outside!"
+      </h6>
+      <p style={{ fontSize: '18px', marginBottom: '20px' }}>~Coco Chanel~</p>
     </div>
-  )
+  );
 }
 
-export default Quote
+export default Quote;

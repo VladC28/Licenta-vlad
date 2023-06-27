@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import CheckoutPage from './Components/CheckoutPage';
 import Home from './Components/Home';
 import LoginPage from './Components/LogInPage';
 import MyAccount from './Components/MyAccount';
@@ -11,6 +12,7 @@ const App = () => (
       <Route path="/products" element={<ProductsPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/myAccount" element={<MyAccount />} />
+      <Route path="/checkout" element={<CheckoutPage />} />
     </Routes>
   </Router>
 );

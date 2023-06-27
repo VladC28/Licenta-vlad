@@ -15,7 +15,6 @@ const fadeImages = [
     caption: 'Articole noi in fiecare saptamana!'
   },
   {
-   
     url: image3,
     caption: 'Nu rata oferta!'
   },
@@ -23,17 +22,34 @@ const fadeImages = [
 
 const Slideshow = () => {
   return (
-    <div  className="slide-container">
+    <div className="slide-container">
       <Fade>
         {fadeImages.map((fadeImage, index) => (
-          <div style={{textAlign:'center'}} key={index}>
-            <img style={{ display:'flex', width: '80%', margin: 'auto', borderRadius: '5px', height:'550px', marginTop: '10px', border:'1px solid black'}} src={fadeImage.url} alt='images' />
-            <h2>{fadeImage.caption}</h2>
+          <div style={slideStyle} key={index}>
+            <img src={fadeImage.url} alt='images' style={imageStyle} />
+            <h2 style={captionStyle}>{fadeImage.caption}</h2>
           </div>
         ))}
       </Fade>
     </div>
-  )
-}
+  );
+};
 
-export default Slideshow
+// Define the styles as objects
+const slideStyle = {
+  textAlign: 'center',
+};
+
+const imageStyle = {
+  display: 'block',
+  width: '40%',
+  margin: 'auto',
+  height: '40%',
+  borderRadius: '5px',
+};
+
+const captionStyle = {
+  marginTop: '10px',
+};
+
+export default Slideshow;
