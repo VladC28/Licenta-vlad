@@ -8,7 +8,8 @@ import HeaderLogo from './HeaderLogo'
 
 function ProductsPage() {
     const data = [
-        {    "id": 1,
+        {   
+    "id": 1,
     "name": "Tricou negru - Barbati",
     "description": "Tricou cu scris ",
     "picture": "../../assets/manshirt1.jpeg",
