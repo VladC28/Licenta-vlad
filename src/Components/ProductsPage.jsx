@@ -3,8 +3,7 @@ import ComponentRenderCardMan from './ComponentRenderCardMan'
 import Footer from './Footer'
 import Headerbuttons from './Headerbuttons'
 import HeaderLogo from './HeaderLogo'
-import {ImWoman} from 'react-icons/im'
-import {ImMan} from 'react-icons/im'
+
 
 
 function ProductsPage() {
@@ -13,13 +12,17 @@ function ProductsPage() {
     "name": "Tricou negru - Barbati",
     "description": "Tricou cu scris ",
     "picture": "../../assets/manshirt1.jpeg",
+    "price": "60 lei",
     "gender": "barbati"
+    
+    
   },
   {
     "id": 2,
     "name": "Tricou alb - Barbati",
     "description": "Tricou clasic alb",
     "picture": "../../assets/manshirt2.jpeg",
+    "price": "75 lei",
     "gender": "barbati"
 
   },
@@ -27,6 +30,7 @@ function ProductsPage() {
     "id": 3,
     "name": "Tricou negru - Barbati",
     "description": "Tricou clasic negru.",
+    "price": "100 lei",
     "picture": "../../assets/manshirt3.jpeg",
     "gender": "barbati"
 
@@ -35,6 +39,7 @@ function ProductsPage() {
     "id": 4,
     "name": "Tricou negru - Barbati",
     "description": "Tricou clasic negru.",
+    "price": "45 lei",
     "picture": "../../assets/manshirt4.jpeg",
     "gender": "barbati"
 
@@ -43,7 +48,8 @@ function ProductsPage() {
     "id": 5,
     "name": "Blugi bleumaren - Barbati",
     "description": "Pantaloni de blug albastrii",
-    "picture": "../../assets/pantsman1.jpeg",
+    "picture": "../../assets/pantsmen1.jpeg",
+    "price": "125 lei",
     "gender": "barbati"
 
   },
@@ -52,6 +58,7 @@ function ProductsPage() {
     "name": "Adidasi tip sport - Barbati",
     "description": "Adidasi sport pentru barbati",
     "picture": "../../assets/manshoe2.jpeg",
+    "price": "200 lei",
     "gender": "barbati"
 
   },
@@ -59,6 +66,7 @@ function ProductsPage() {
     "id": 7,
     "name": "Adidasi nike - Barbati",
     "description": "Nike",
+    "price": "350 lei",
     "picture": "../../assets/manshoe1.jpeg",
     "gender": "barbati"
 
@@ -68,6 +76,7 @@ function ProductsPage() {
     "name": "Adidasi negrii Nike - Barbati",
     "description": "Adidasi barbati negrii",
     "picture": "../../assets/manshoe3.jpeg",
+    "price": "250 lei",
     "gender": "barbati"
   },
   {
@@ -88,10 +97,10 @@ function ProductsPage() {
   },
   {
     "id": 11,
-    "name": "Dress",
-    "description": "Elegant and stylish dress for special occasions.",
+    "name": "Tricou alb - Dama",
+    "description": "Tricou alb-dama ",
     "price": "50 lei",
-    "picture": "../../assets/.jpeg",
+    "picture": "../../assets/woman3.jpeg",
     "gender": "femei"
   },
   {
@@ -162,11 +171,11 @@ setDataSelected(filteredPeople);
       setCosulCumparaturi(updatedArray);
     }
   return (
-        <div style={{textAlign:'center'}}>
+        <div style={{}}>
         <Headerbuttons />
         <HeaderLogo cosulCumparaturi={cosulCumparaturi} deleteProdus={(index) => deleteProdus(index)}/>
-        <button style={{ fontSize: '60px', width: 'fit-content', height: 'fit-content', border: 'none', background: 'none', cursor:'pointer'}} onClick={() => selectionFilters('femei')}><ImWoman /></button>
-        <button style={{ fontSize: '60px', width: 'fit-content', height: 'fit-content', border: 'none', background: 'none', cursor:'pointer'}} onClick={() => selectionFilters('barbati')} ><ImMan /></button>
+        <button style={{display:'inline-block', outline:'none', cursor:'pointer', fontSize:'16px', lineHeight:'20px', fontWeight:'600', borderRadius:'8px', padding:'14px 24px', border:'none', background:'linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%)', color:'#fff'}} onClick={() => selectionFilters('femei')}>Femei</button>
+        <button style={{ display:'inline-block', outline:'none', cursor:'pointer', fontSize:'16px', lineHeight:'20px', fontWeight:'600', borderRadius:'8px', padding:'14px 24px', border:'none', backgroundColor:'#00D8FF', color:'#fff'}} onClick={() => selectionFilters('barbati')} >Barbati</button>
         <ComponentRenderCardMan haineBarbat={dataSelected} callBackAddCos={(index) => callBackAddCos(index)}/>
         <Footer />
     </div>

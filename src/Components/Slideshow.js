@@ -2,7 +2,7 @@ import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import image1 from '../images/image1.jpeg';
-import image2 from '../images/image2.jpg';
+import image6 from '../images/image6.jpg';
 import image3 from '../images/image3.jpeg';
 
 const fadeImages = [
@@ -11,7 +11,7 @@ const fadeImages = [
     caption: 'Cele mai bune promotii!'
   },
   {
-    url: image2,
+    url: image6,
     caption: 'Articole noi in fiecare saptamana!'
   },
   {
