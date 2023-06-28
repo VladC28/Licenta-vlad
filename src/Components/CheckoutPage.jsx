@@ -32,7 +32,7 @@ function CheckoutPage() {
       ) : (
              <form style={formStyle} onSubmit={handleSubmit}>
         <label>
-          Full Name:
+          Nume si Prenume:
           <input type="text" name="fullName" required style={inputStyle} />
         </label>
         <br />
@@ -42,12 +42,12 @@ function CheckoutPage() {
         </label>
         <br />
         <label>
-          Card Number:
+          Numar Card:
           <input type="text" name="cardNumber" required style={inputStyle} />
         </label>
         <br />
         <label>
-          Expiry Date:
+          Data Expirare:
           <input type="text" name="expiryDate" required style={inputStyle} />
         </label>
         <br />
@@ -57,21 +57,21 @@ function CheckoutPage() {
         </label>
         <br />
         <label>
-          Billing Address:
+          Adresa Facturare:
           <input type="text" name="billingAddress" required style={inputStyle} />
         </label>
         <br />
         <label>
-          City:
+          Oras:
           <input type="text" name="city" required style={inputStyle} />
         </label>
         <br />
         <label>
-          Postal Code:
+          Cod Postal:
           <input type="text" name="postalCode" required style={inputStyle} />
         </label>
         <br />
-        <button type="submit" style={submitButtonStyle}>Submit Payment</button>
+        <button type="submit" style={submitButtonStyle}>Cumpara</button>
       </form>
       )}
       <Footer />
@@ -79,7 +79,7 @@ function CheckoutPage() {
   );
 }
 
-// Define the styles as objects
+
 const formStyle = {
   margin: '20px auto',
   width: '400px',
@@ -107,7 +107,7 @@ const messageContainerStyle = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  height: 'calc(100vh - 100px)', // Adjust the height as needed
+  height: 'calc(100vh - 100px)', 
 };
 
 const messageStyle = {
